@@ -1,0 +1,22 @@
+.menu {
+  height: 100vh;
+}
+
+.graphReferral {
+  flex-direction: row;
+  flex: 1;
+}
+
+.graph {
+  width: 40%;
+  height: 100%;
+}
+
+.referral {
+  flex: 1;
+  height: 100%;
+}
+
+.table {
+  margin-left: 14em;
+}

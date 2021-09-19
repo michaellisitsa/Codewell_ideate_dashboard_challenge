@@ -1,0 +1,57 @@
+body {
+  font-family: 'Cabin', sans-serif;
+}
+
+.navGraphReferral-container {
+  display: flex;
+  max-height: 50vh;
+}
+
+.menu {
+  width: 12.5em;
+  background: #4a35c9;
+}
+
+.menu a,
+p {
+  color: white;
+  font: 700;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+
+.menu a:hover {
+  transition: all 200ms ease-in;
+  text-decoration-color: white;
+}
+
+.graphReferral {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.graph {
+  background-color: #e7fff8;
+}
+
+.referral {
+  background-color: #f1f1fd;
+}
+
+.table {
+  border: 1px solid #c0c0c0;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+.table th {
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+  background: #f0f0f0;
+}
+
+.table td {
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}

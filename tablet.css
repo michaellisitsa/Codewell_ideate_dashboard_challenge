@@ -1,0 +1,16 @@
+.graphReferral {
+  flex-direction: column;
+  flex: 1;
+}
+
+.graph {
+  height: 100%;
+}
+
+.referral {
+  height: 100%;
+}
+
+.menu {
+  height: 100%;
+}
