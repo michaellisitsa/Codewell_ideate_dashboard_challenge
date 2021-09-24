@@ -22,12 +22,15 @@
 .menu {
   display: flex;
   flex-direction: column;
-  height: calc(100% - var(--scrollPos));
+  position: relative;
   align-self: flex-end;
+  height: 100%;
+  justify-content: space-between;
 }
 
 .menu__items {
-  flex: 1;
+  position: sticky;
+  top: 0;
 }
 
 .reports-generated {

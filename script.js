@@ -18,7 +18,7 @@
 
 // When the user scrolls down from the top of the document, resize the menu height
 
-// const menu = document.getElementById('menu');
+const menu = document.getElementById('menu');
 
 window.onscroll = function () {
   scrollFunction();
