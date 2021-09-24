@@ -18,27 +18,40 @@
 
 // When the user scrolls down from the top of the document, resize the menu height
 
-const menu = document.getElementById('menu');
+const menu = document.querySelector('#menu');
+const topMenu = document.querySelector('#top-menu');
 
-window.onscroll = function () {
-  scrollFunction();
-};
+// window.onscroll = function () {
+//   scrollFunction();
+// };
 
-function scrollFunction() {
-  if (window.scrollY > 10) {
-    document.documentElement.style.setProperty(
-      '--scrollPos',
-      window.scrollY + 'px'
-    );
-  } else {
-    // pass
-  }
+// function scrollFunction() {
+//   if (window.scrollY > menu.clientHeight) {
+//     document.documentElement.style.setProperty(
+//       '--scrollPos',
+//       window.scrollY + 'px'
+//     );
+//   } else {
+//     // pass
+//   }
+// }
+
+// https://css-tricks.com/styling-based-on-scroll-position/
+if (
+  'IntersectionObserver' in window &&
+  'IntersectionObserverEntry' in window &&
+  'intersectionRatio' in window.IntersectionObserverEntry.prototype
+) {
+  let observer = new IntersectionObserver((entries) => {
+    if (entries[0].boundingClientRect.y < 0) {
+      topMenu.classList.add('top-menu--visible');
+      console.log('out of view');
+      console.log(entries[0].boundingClientRect.y);
+    } else {
+      topMenu.classList.remove('top-menu--visible');
+      console.log('in view again');
+      console.log(entries[0].boundingClientRect.y);
+    }
+  });
+  observer.observe(menu.querySelector('#bot-sidebar-marker'));
 }
-
-// let root = docum]ent.documentElement;
-
-// root.addEventListener('scroll', (e) => {
-//   root.style.setProperty('--scrollPos' + e.scrollTop + 'px');
-//   console.log(root.style.getPropertyValue('--scrollPos'));
-//   console.log('hello world');
-// });

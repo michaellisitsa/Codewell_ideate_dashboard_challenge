@@ -2,10 +2,6 @@
   --scrollPos: 0px;
 }
 
-.navGraphReferral-container {
-  height: 800px;
-}
-
 .graphReferral {
   flex-direction: column;
   flex: 1;
@@ -23,12 +19,22 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  align-self: flex-end;
-  height: 100%;
   justify-content: space-between;
 }
 
+.top-menu {
+  display: none;
+}
+
+.top-menu--visible {
+  display: flex;
+  position: fixed;
+  top: 0;
+}
+
 .menu__items {
+  display: flex;
+  flex-direction: column;
   position: sticky;
   top: 0;
 }
@@ -37,4 +43,11 @@
   width: 158px;
   height: 123px;
   background-color: #190781;
+  position: sticky;
+}
+
+.bot-sidebar-marker {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
