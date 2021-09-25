@@ -28,8 +28,14 @@
 
 .top-menu--visible {
   display: flex;
-  position: fixed;
+  height: 100px;
+  background-color: #190781;
+  position: sticky;
   top: 0;
+}
+
+.top-menu--visible a {
+  color: white;
 }
 
 .menu__items {
