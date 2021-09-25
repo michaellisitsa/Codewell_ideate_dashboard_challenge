@@ -47,7 +47,7 @@ if (
       topMenu.classList.add('top-menu--visible');
       setTimeout(function () {
         topMenu.classList.add('top-menu--accordian');
-      }, 10);
+      }, 50);
       console.log('out of view');
       console.log(entries[0].boundingClientRect.y);
     } else {
