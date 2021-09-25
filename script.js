@@ -45,10 +45,16 @@ if (
   let observer = new IntersectionObserver((entries) => {
     if (entries[0].boundingClientRect.y < 0) {
       topMenu.classList.add('top-menu--visible');
+      setTimeout(function () {
+        topMenu.classList.add('top-menu--accordian');
+      }, 10);
       console.log('out of view');
       console.log(entries[0].boundingClientRect.y);
     } else {
-      topMenu.classList.remove('top-menu--visible');
+      topMenu.classList.remove('top-menu--accordian');
+      setTimeout(function () {
+        topMenu.classList.remove('top-menu--visible');
+      }, 200);
       console.log('in view again');
       console.log(entries[0].boundingClientRect.y);
     }

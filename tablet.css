@@ -24,14 +24,20 @@
 
 .top-menu {
   display: none;
+  height: 0px;
 }
 
 .top-menu--visible {
   display: flex;
-  height: 100px;
   background-color: #190781;
   position: sticky;
   top: 0;
+  transition: height 0.2s ease-out;
+  opacity: 1;
+}
+
+.top-menu--accordian {
+  height: 100px;
 }
 
 .top-menu--visible a {
@@ -56,4 +62,15 @@
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.table {
+  margin-top: 100px;
+}
+
+th {
+  background: white;
+  position: sticky;
+  top: 100px; /* Don't forget this, required for the stickiness */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
 }
