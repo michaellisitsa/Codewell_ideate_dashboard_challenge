@@ -2,17 +2,18 @@
   --scrollPos: 0px;
 }
 
+.navGraphReferral-container {
+  height: 840px;
+}
+
 .graphReferral {
   flex-direction: column;
   flex: 1;
 }
 
-.graph {
-  height: 100%;
-}
-
+.graph,
 .referral {
-  height: 100%;
+  height: 50%;
 }
 
 .menu {

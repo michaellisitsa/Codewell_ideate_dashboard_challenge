@@ -11,7 +11,6 @@ body {
 
 .navGraphReferral-container {
   display: flex;
-  max-height: 50vh;
 }
 
 .menu {
@@ -84,8 +83,33 @@ body {
   font-size: 14px;
 }
 
+.red p {
+  color: #863e3e;
+  font-size: 18px;
+  margin-right: 1em;
+}
+
+.red small {
+  color: #b96161;
+  font-size: 14px;
+}
+
+.graph__graph {
+  border-bottom: solid 1px #e0e6ed;
+  border-left: solid 1px #e0e6ed;
+}
+
 .referral {
+  display: flex;
   background-color: #f1f1fd;
+}
+
+.referral__form {
+  flex: 1;
+}
+
+.referral__image {
+  width: 25%;
 }
 
 .table {
