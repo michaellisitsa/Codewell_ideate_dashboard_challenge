@@ -2,6 +2,10 @@
   height: 100vh;
 }
 
+.navGraphReferral-container {
+  height: 400px;
+}
+
 .graphReferral {
   flex-direction: row;
   flex: 1;

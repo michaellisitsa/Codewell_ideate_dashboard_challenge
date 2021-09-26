@@ -17,10 +17,23 @@
     <div class="navGraphReferral-container" id="navGraphReferral-container">
       <aside class="menu" id="menu">
         <nav class="menu__items">
-          <a class="menu__links" href="#">Overview</a>
-          <a class="menu__links" href="#">Reports</a>
-          <a class="menu__links" href="#">Settings</a>
-          <a class="menu__links" href="#">Help</a>
+          <div class="menu__link-container">
+            <img src="Assets/Overview.svg" alt="" class="menu__link-icon" />
+            <a class="menu__links" href="#">Overview</a>
+          </div>
+          <div class="menu__link-container">
+            <img src="Assets/Report.svg" alt="" class="menu__link-icon" />
+            <a class="menu__links" href="#">Reports</a>
+          </div>
+          <div class="menu__link-container">
+            <img src="Assets/Settings.svg" alt="" class="menu__link-icon" />
+            <a class="menu__links" href="#">Settings</a>
+          </div>
+          <div class="menu__link-container">
+            <img src="Assets/Help.svg" alt="" class="menu__link-icon" />
+            <a class="menu__links" href="#">Help</a>
+          </div>
+
         </nav>
         <div class="reports-generated">
           <p>Reports generated</p>
@@ -65,26 +78,30 @@
         </div>
         <div class="referral">
           <div class="referral__form">
-            <header class="referrral__header">
+            <header class="referral__header">
               Earn up to 40% off by referring people
             </header>
             <p class="referral__body">
               We just kicked off our referral program. Invite people to Ideate
               and get 40% off on your next renewal.
             </p>
-            <form class="referral__form">
+            <form class="referral__email-form">
               <input
                 type="text"
                 placeholder="Enter Email Address"
-                class="referral__email-form"
+                class="referral__email-input"
               />
               <button class="referral__email-button">Invite</button>
-              <small class="referral__terms"
-                >* Applicable to new accounts only.</small
-              >
             </form>
+            <small class="referral__terms"
+              >* Applicable to new accounts only.</small
+            >
           </div>
-          <img src="Assets/Referral Image.png" alt="" class="referral__image" />
+          <div
+            class="referral__image"
+            style="background-image: url('/Assets/Referral Image.png')"
+          ></div>
+          <!-- <img src="" alt="" class="referral__image" /> -->
         </div>
       </article>
     </div>
