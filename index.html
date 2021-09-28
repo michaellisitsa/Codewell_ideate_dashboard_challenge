@@ -33,7 +33,6 @@
             <img src="Assets/Help.svg" alt="" class="menu__link-icon" />
             <a class="menu__links" href="#">Help</a>
           </div>
-
         </nav>
         <div class="reports-generated">
           <p>Reports generated</p>
@@ -73,7 +72,48 @@
             </div>
           </header>
           <div class="graph__graph">
-            <img src="Assets/graph.svg" alt="" class="graph__trendline" />
+            <svg
+              width="444"
+              height="140"
+              viewBox="0 0 444 140"
+              fill="true"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke="black"
+            >
+              <defs>
+                <linearGradient
+                  id="vertical-gradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="0%"
+                  y2="100%"
+                >
+                  <stop offset="0" stop-color="#E7FFF8"></stop>
+                  <stop offset="1" stop-color="white"></stop>
+                </linearGradient>
+              </defs>
+              <clipPath id="cut-off-bottom">
+                <rect x="0" y="0" width="444" height="140"></rect>
+              </clipPath>
+              <path
+                id="graph_line"
+                d="M1 56.2528C1 56.2528 24.9337 10.5079 53.0291 3.90532C98.2494 -6.72169 94.4792 107.335 136.771 88.1598C152.787 80.8982 150.988 58.0993 168.484 56.2528C190.081 53.9735 186.632 90.1096 207.63 95.638C243.513 105.085 237.824 22.8347 274.525 28.3341C301.71 32.4078 297.18 72.52 324.076 78.1889C365.228 86.8623 359.361 -9.30262 399.89 1.91113C422.936 8.28758 443 45.2847 443 45.2847 L 444,140 L 0,140 Z"
+                fill="url(#vertical-gradient)"
+                fill-opacity="1"
+                clip-path="url(#cut-off-bottom)"
+                stroke="none"
+              ></path>
+              <path
+                id="graph_line"
+                d="M1 56.2528C1 56.2528 24.9337 10.5079 53.0291 3.90532C98.2494 -6.72169 94.4792 107.335 136.771 88.1598C152.787 80.8982 150.988 58.0993 168.484 56.2528C190.081 53.9735 186.632 90.1096 207.63 95.638C243.513 105.085 237.824 22.8347 274.525 28.3341C301.71 32.4078 297.18 72.52 324.076 78.1889C365.228 86.8623 359.361 -9.30262 399.89 1.91113C422.936 8.28758 443 45.2847 443 45.2847"
+                fill="none"
+                clip-path="url(#cut-off-bottom)"
+                stroke="#3E8671"
+                stroke-width="0.75px"
+                ;
+              ></path>
+            </svg>
           </div>
         </div>
         <div class="referral">
