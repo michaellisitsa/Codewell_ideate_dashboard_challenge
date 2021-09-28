@@ -20,6 +20,24 @@ body {
   margin: 0.75em;
 }
 
+.top-menu {
+  display: none;
+  position: sticky;
+  top: 0;
+  height: 0px;
+  background: #4a35c9;
+  transition: height 0.2s ease-out;
+}
+
+.top-menu__items {
+  display: flex;
+  align-items: center;
+}
+
+.top-menu__items img {
+  height: 18px;
+}
+
 .navGraphReferral-container {
   display: flex;
 }
@@ -27,6 +45,7 @@ body {
 .menu {
   width: 12.5em;
   background: #4a35c9;
+  display: none;
 }
 
 .menu a,
@@ -138,7 +157,7 @@ body {
 }
 
 .referral__form {
-  padding: 0 50px;
+  padding: 37px 50px;
 }
 
 .referral__email-form {
@@ -190,6 +209,12 @@ body {
   border: 1px solid #c0c0c0;
   padding: 5px;
   background: #f0f0f0;
+  position: sticky;
+  top: 0px; /* Don't forget this, required for the stickiness */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}
+
+th {
 }
 
 .table td {

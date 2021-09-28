@@ -11,6 +11,10 @@
   flex: 1;
 }
 
+.referral__form {
+  padding: 96px 50px;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -18,18 +22,10 @@
   justify-content: space-between;
 }
 
-.top-menu {
-  display: none;
-  height: 0px;
-}
-
 .top-menu--visible {
   display: flex;
-  background-color: #190781;
   position: sticky;
   top: 0;
-  transition: height 0.2s ease-out;
-  opacity: 1;
 }
 
 .top-menu--accordian {
@@ -74,9 +70,6 @@
   margin-top: 100px;
 }
 
-th {
-  background: white;
-  position: sticky;
+.table th {
   top: 100px; /* Don't forget this, required for the stickiness */
-  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
 }
