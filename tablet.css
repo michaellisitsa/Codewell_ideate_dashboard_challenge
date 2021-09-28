@@ -11,11 +11,6 @@
   flex: 1;
 }
 
-.graph,
-.referral {
-  height: 50%;
-}
-
 .menu {
   display: flex;
   flex-direction: column;
