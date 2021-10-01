@@ -1,5 +1,5 @@
 .menu {
-  height: 100vh;
+  height: calc(100vh - var(--top-nav-height) - 2 * 1.5em);
   position: fixed;
 }
 
@@ -14,7 +14,7 @@
 .graphReferral {
   flex-direction: row;
   flex: 1;
-  margin-left: 12.5em;
+  margin-left: calc(var(--sidebar) + 3em);
 }
 
 .graph {

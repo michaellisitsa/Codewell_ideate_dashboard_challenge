@@ -1,5 +1,6 @@
 :root {
   --sidebar: 12.5em;
+  --top-nav-height: 66px;
 }
 
 body {
@@ -16,11 +17,14 @@ body {
 }
 
 .top-nav {
-  height: 66px;
+  height: var(--top-nav-height);
   background-color: white;
   display: flex;
+  position: sticky;
   align-items: center;
   padding: 0 1.5em;
+  overflow: hidden;
+  top: 0;
 }
 
 .searchUser {
@@ -45,7 +49,7 @@ body {
 .top-menu {
   display: none;
   position: sticky;
-  top: 0;
+  top: var(--top-nav-height);
   height: 0px;
   background: #4a35c9;
   transition: height 0.2s ease-out;
