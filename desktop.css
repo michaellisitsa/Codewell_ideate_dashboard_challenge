@@ -1,5 +1,10 @@
 .menu {
   height: 100vh;
+  position: fixed;
+}
+
+.menu__items {
+  position: static;
 }
 
 .navGraphReferral-container {
@@ -9,6 +14,7 @@
 .graphReferral {
   flex-direction: row;
   flex: 1;
+  margin-left: 12.5em;
 }
 
 .graph {

@@ -1,14 +1,38 @@
-:root {
-  --scrollPos: 0px;
+.top-nav {
+  padding: 0 74px;
 }
 
-.navGraphReferral-container {
-  height: 840px;
+.company-logo {
+  width: var(--sidebar);
+}
+
+.searchUser {
+  justify-content: space-between;
+}
+
+.search {
+  display: block;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: flex-end;
+}
+
+.hamburger {
+  display: none;
+}
+
+.search input[type='text'] {
+  background-color: #f3f3f4;
 }
 
 .graphReferral {
   flex-direction: column;
   flex: 1;
+  margin: 1.5em 0;
 }
 
 .referral__form {

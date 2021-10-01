@@ -45,6 +45,7 @@ if (
   let observer = new IntersectionObserver((entries) => {
     if (entries[0].boundingClientRect.y < 0) {
       topMenu.classList.add('top-menu--visible');
+      // need to first make visible (display: flex), only then add animation to change the height.
       setTimeout(function () {
         topMenu.classList.add('top-menu--accordian');
       }, 50);
