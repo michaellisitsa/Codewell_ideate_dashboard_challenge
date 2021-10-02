@@ -32,7 +32,6 @@
 .graphReferral {
   flex-direction: column;
   flex: 1;
-  margin: 1.5em 0;
 }
 
 .referral__form {

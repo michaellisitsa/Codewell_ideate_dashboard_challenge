@@ -30,7 +30,8 @@
   width: 40%;
 }
 
-.table {
+.table-container {
+  background: white;
   margin-left: calc(var(--sidebar) + 3em);
 }
 
