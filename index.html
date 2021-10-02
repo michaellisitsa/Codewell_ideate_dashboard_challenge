@@ -10,7 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"
       rel="stylesheet"
     />
-
     <title>Ideate Dashboard</title>
   </head>
   <body>
@@ -56,7 +55,8 @@
           </div>
         </nav>
         <div class="reports-generated">
-          <p>Reports generated</p>
+          <h1>Reports generated</h1>
+          <p>This is the number of reports you have used this month.</p>
         </div>
         <div id="bot-sidebar-marker" class="bot-sidebar-marker"></div>
       </aside>
@@ -69,24 +69,24 @@
             </div>
           </header>
           <header class="graph__statSummary">
-            <div class="this-mth">
-              <p>This Month</p>
+            <div class="graph__stat">
+              <h2>This Month</h2>
               <div class="graph__statNumbers green">
                 <p>121 Reports</p>
                 <img src="Assets/Up Arrow.svg" alt="" />
                 <small>5%</small>
               </div>
             </div>
-            <div class="last-mth">
-              <p>Last Month</p>
+            <div class="graph__stat">
+              <h2>Last Month</h2>
               <div class="graph__statNumbers red">
                 <p>109 Reports</p>
                 <img src="Assets/Down Arrow.svg" alt="" />
                 <small>5%</small>
               </div>
             </div>
-            <div class="percent">
-              <p>% Increase</p>
+            <div class="graph__stat">
+              <h2>% Increase</h2>
               <div class="graph__statNumbers green">
                 <p>50%</p>
               </div>
@@ -94,6 +94,7 @@
           </header>
           <div class="graph__graph">
             <svg
+              class="graph__trendline"
               width="444"
               height="185"
               viewBox="0 -45 444 185"
@@ -101,6 +102,7 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke="black"
+              preserveAspectRatio="xMidYMid slice"
             >
               <defs>
                 <linearGradient

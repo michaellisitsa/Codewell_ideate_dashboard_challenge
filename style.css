@@ -14,6 +14,8 @@ body {
   margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
+  padding-inline-start: 0;
+  box-sizing: inherit;
 }
 
 .top-nav {
@@ -25,6 +27,7 @@ body {
   padding: 0 1.5em;
   overflow: hidden;
   top: 0;
+  z-index: 1;
 }
 
 .searchUser {
@@ -78,7 +81,7 @@ body {
 .menu a,
 .menu p {
   color: white;
-  font: 700;
+  font-weight: 700;
   text-decoration: underline;
   text-decoration-color: transparent;
 }
@@ -99,12 +102,14 @@ body {
 .graph {
   background-color: white;
   padding: 24px;
+  height: 100%;
 }
 
 .graph__header {
   display: flex;
   align-items: center;
   border-bottom: solid 1px #e0e6ed;
+  padding-bottom: 1.5em;
 }
 
 .graph__title {
@@ -123,11 +128,33 @@ body {
   justify-content: space-between;
   align-items: center;
   font-weight: 700;
+  padding-top: 1.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.graph__statSummary h2 {
+  font-size: 0.875em;
+  font-weight: 400;
+  color: #595959;
+}
+
+.graph__stat {
+  border: none; /* Removes the default CSS styling for the <input> HTML tag in browsers */
+  border-right: 1px solid #e0e6ed; /* Creates border to right of each .graph__stat class */
+  text-align: center; /* OPTIONAL - styling to center input text */
+  margin: 0 5px; /* OPTIONAL - gives you spacing for visual appeal */
+  flex: 1;
+}
+
+.graph__stat:last-child {
+  border: none; /* Remove border from the last .flex-item child in the form */
 }
 
 .graph__statNumbers {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
 }
 
@@ -158,15 +185,23 @@ body {
   border-left: solid 1px #e0e6ed;
 }
 
+.graph__trendline {
+  width: 100%;
+}
+
+.graph__trendline path {
+  width: 100%;
+}
+
 .graph__dates span {
   position: relative;
-  left: -24px;
 }
 
 .graph__dates {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  margin-top: 1.5em;
 }
 
 .graph__dates li {
@@ -178,6 +213,8 @@ body {
   display: flex;
   background-color: #f1f1fd;
   align-items: center;
+  overflow: hidden;
+  height: 100%;
 }
 
 .referral__header {
@@ -187,6 +224,7 @@ body {
 
 .referral__form {
   padding: 37px 50px;
+  width: 60%;
 }
 
 .referral__email-form {

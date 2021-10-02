@@ -83,6 +83,18 @@
   padding: 1em;
 }
 
+.reports-generated h1 {
+  font-weight: 700;
+  font-size: 1em;
+  color: white;
+}
+
+.reports-generated p {
+  font-weight: 400;
+  font-size: 0.75em;
+  color: #bfb4f9;
+}
+
 .bot-sidebar-marker {
   position: absolute;
   bottom: 0;

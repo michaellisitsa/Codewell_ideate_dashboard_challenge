@@ -7,14 +7,11 @@
   position: static;
 }
 
-.navGraphReferral-container {
-  height: 400px;
-}
-
 .graphReferral {
   flex-direction: row;
   flex: 1;
   margin-left: calc(var(--sidebar) + 3em);
+  align-items: center;
 }
 
 .graph {
@@ -23,6 +20,14 @@
 
 .referral {
   flex: 1;
+}
+
+.referral__form {
+  width: 60%;
+}
+
+.referral__image {
+  width: 40%;
 }
 
 .table {
