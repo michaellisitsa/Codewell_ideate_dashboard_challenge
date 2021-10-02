@@ -10,7 +10,7 @@
 .graphReferral {
   flex-direction: row;
   flex: 1;
-  margin-left: calc(var(--sidebar) + 3em);
+  margin-left: calc(var(--sidebar) + 1.5em);
   align-items: center;
 }
 
@@ -31,5 +31,11 @@
 }
 
 .table {
-  margin-left: 14em;
+  margin-left: calc(var(--sidebar) + 3em);
+}
+
+.table th {
+  top: var(
+    --top-nav-height
+  ); /* Don't forget this, required for the stickiness */
 }

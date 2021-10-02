@@ -1,5 +1,5 @@
 .top-nav {
-  padding: 0 74px;
+  padding: 0 4.625em;
 }
 
 .company-logo {
@@ -52,7 +52,7 @@
 }
 
 .top-menu--accordian {
-  height: 100px;
+  height: calc(var(--top-menu-height) + 3em);
 }
 
 .top-menu--visible a {
@@ -63,7 +63,7 @@
   display: flex;
   flex-direction: column;
   position: sticky;
-  top: 0.5em;
+  top: var(--top-nav-height);
   gap: 1.5em;
   padding-top: 1.5em;
 }
@@ -71,6 +71,10 @@
 .menu__link-container {
   display: flex;
   padding-left: 3.125em;
+}
+
+.top-menu__link-container {
+  display: flex;
 }
 
 .reports-generated {
@@ -106,5 +110,7 @@
 }
 
 .table th {
-  top: 100px; /* Don't forget this, required for the stickiness */
+  top: calc(
+    var(--top-nav-height) + var(--top-menu-height) + 3em
+  ); /* Don't forget this, required for the stickiness */
 }
