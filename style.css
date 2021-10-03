@@ -63,12 +63,18 @@ a.selected-link {
 }
 
 .top-menu {
-  display: none;
+  display: flex;
   position: sticky;
   top: var(--top-nav-height);
   height: 0px;
   transition: height 0.2s ease-out;
   background: #e5e5e5;
+  height: calc(var(--top-menu-height) + 3em);
+  order: -1;
+}
+
+.top-menu a {
+  color: #d0cbf0;
 }
 
 .top-menu__items {
@@ -329,8 +335,8 @@ a.selected-link {
   padding: 5px;
   background: #f0f0f0;
   position: sticky;
-  top: var(
-    --top-nav-height
+  top: calc(
+    var(--top-nav-height) + var(--top-menu-height) + 3em
   ); /* Don't forget this, required for the stickiness */
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
   background: white;

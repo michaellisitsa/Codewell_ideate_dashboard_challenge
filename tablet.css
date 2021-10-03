@@ -52,6 +52,11 @@
   justify-content: space-between;
 }
 
+.top-menu {
+  display: none;
+  height: 0;
+}
+
 .top-menu--visible {
   display: flex;
   position: sticky;
@@ -59,10 +64,6 @@
 
 .top-menu--accordian {
   height: calc(var(--top-menu-height) + 3em);
-}
-
-.top-menu--visible a {
-  color: #d0cbf0;
 }
 
 .menu__items {
@@ -151,9 +152,6 @@
 }
 
 .bot-sidebar-marker {
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 
 .table th {
