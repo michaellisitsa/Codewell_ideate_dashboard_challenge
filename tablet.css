@@ -80,6 +80,17 @@
   gap: 0.5em;
 }
 
+.menu__link-container:last-child:before {
+  padding-top: 1.75em;
+  content: '';
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  bottom: 0;
+  width: 100px;
+  border-top: 1px solid #d0cbf0;
+}
+
 .top-menu__link-container {
   display: flex;
   gap: 0.5em;

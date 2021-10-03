@@ -93,14 +93,19 @@ body {
 }
 
 .menu a,
-.menu p {
+.menu p,
+.top-menu a,
+.top-menu p,
+.referral__email-button {
   color: white;
   font-weight: 700;
   text-decoration: underline;
   text-decoration-color: transparent;
 }
 
-.menu a:hover {
+.menu a:hover,
+.top-menu a:hover,
+.referral__email-button:hover {
   transition: all 200ms ease-in;
   text-decoration-color: white;
 }
@@ -134,6 +139,13 @@ body {
   border: solid 1px #e0e6ed;
   border-radius: 5px;
   padding: 0.5em 1em;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+
+.filter:hover {
+  transition: all 200ms ease-in;
+  text-decoration-color: black;
 }
 
 .graph__statSummary {
@@ -336,8 +348,6 @@ th:after {
   font-size: 14px;
 }
 
-.table a:link,
-.table a:hover,
-.table a:active {
+.table a:hover {
   color: red;
 }
