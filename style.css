@@ -58,6 +58,10 @@ body {
   border: 0;
 }
 
+.selected-link {
+  color: white;
+}
+
 .top-menu {
   display: none;
   position: sticky;
@@ -97,8 +101,7 @@ body {
 .top-menu a,
 .top-menu p,
 .referral__email-button {
-  color: white;
-  font-weight: 700;
+  font-weight: 400;
   text-decoration: underline;
   text-decoration-color: transparent;
 }

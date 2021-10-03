@@ -20,6 +20,7 @@
 
 const menu = document.querySelector('#menu');
 const topMenu = document.querySelector('#top-menu');
+const menuLinks = document.querySelectorAll('.menu__links');
 
 // window.onscroll = function () {
 //   scrollFunction();
@@ -62,3 +63,19 @@ if (
   });
   observer.observe(menu.querySelector('#bot-sidebar-marker'));
 }
+
+const clearSelected = function () {
+  menuLinks.forEach((menuLink) => menuLink.classList.remove('selected-link'));
+};
+
+// Add selected class to selected hyperlink, and remove from any others in selection
+menuLinks.forEach((menuLink) =>
+  menuLink.addEventListener(
+    'click',
+    function () {
+      clearSelected();
+      menuLink.classList.add('selected-link');
+    }.bind(this, menuLink)
+  )
+);
+// }
