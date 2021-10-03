@@ -20,7 +20,7 @@
 
 const menu = document.querySelector('#menu');
 const topMenu = document.querySelector('#top-menu');
-const menuLinks = document.querySelectorAll('.menu__links');
+const menuLinks = document.querySelectorAll('.menu__links, .top-menu__links');
 
 // window.onscroll = function () {
 //   scrollFunction();
@@ -70,7 +70,7 @@ const clearSelected = function () {
 menuLinks.forEach((menuLink) =>
   menuLink.addEventListener(
     'click',
-    function () {
+    function (e) {
       clearSelected();
       menuLink.classList.add('selected-link');
     }.bind(this, menuLink)

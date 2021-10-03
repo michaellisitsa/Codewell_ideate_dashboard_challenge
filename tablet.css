@@ -151,9 +151,6 @@
   height: 100%;
 }
 
-.bot-sidebar-marker {
-}
-
 .table th {
   top: calc(
     var(--top-nav-height) + var(--top-menu-height) + 3em

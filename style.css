@@ -73,7 +73,7 @@ a.selected-link {
   order: -1;
 }
 
-.top-menu a {
+.top-menu__links {
   color: #d0cbf0;
 }
 
