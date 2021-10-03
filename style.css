@@ -2,9 +2,6 @@
   --sidebar: 12.5em;
   --top-nav-height: 66px;
   --top-menu-height: 66px;
-  --header-height: calc(
-    var(--top-menu-height: 66px) + var(--top-nav-height: 66px)
-  );
 }
 
 body {

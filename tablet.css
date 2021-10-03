@@ -50,7 +50,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: hidden;
 }
 
 .top-menu {
@@ -99,14 +98,14 @@
 .reports-generated__wrapper {
   background: #4a35c9;
   z-index: 1;
+  border: 0;
+  border-radius: 5px;
 }
 
 .reports-generated {
   height: 123px;
   background-color: #190781;
   margin: 0 1em 1em;
-  border: 0;
-  border-radius: 5px;
   padding: 1em;
 }
 

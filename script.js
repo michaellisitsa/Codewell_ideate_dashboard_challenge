@@ -1,42 +1,9 @@
-// TODO-Nav Bar for tablet view
-
-// Use clientHeight to get the content height within the nav
-// and the parent container height
-// When the two are equal or close to equal perform a transition per https://codepen.io/SelenIT/pen/ZBXrXV/
-// or https://codepen.io/osublake/pen/eJGrPN?editors=0010
-
-// The sidebar should stick to the top bar, but shrink in size as you scroll in tablet view, until there is no
-// remaining space.
-
-// Once the transition occurs, the bar should just take over a the top of the page, rather than a card.
-
-// possibly get scroll position from window.pageYOffset
-
-// OR simpler, is to have the top bar as a separate element display:none, and then start lowering opacity on the sidebar
-// and the banners, while still allowing them to scroll of the page
-// whilst raising the opacity of the top bar in its place.
-
-// When the user scrolls down from the top of the document, resize the menu height
-
 const menu = document.querySelector('#menu');
 const topMenu = document.querySelector('#top-menu');
 const menuLinks = document.querySelectorAll('.menu__links, .top-menu__links');
 
-// window.onscroll = function () {
-//   scrollFunction();
-// };
-
-// function scrollFunction() {
-//   if (window.scrollY > menu.clientHeight) {
-//     document.documentElement.style.setProperty(
-//       '--scrollPos',
-//       window.scrollY + 'px'
-//     );
-//   } else {
-//     // pass
-//   }
-// }
-
+// When the user scrolls down from the top of the document past the sidebar
+// in tablet mode, show the top-menu instead.
 // https://css-tricks.com/styling-based-on-scroll-position/
 if (
   'IntersectionObserver' in window &&
