@@ -57,14 +57,23 @@
             <img src="Assets/Settings.svg" alt="" class="menu__link-icon" />
             <a class="menu__links" href="#">Settings</a>
           </div>
+          <div class="menu__link-container help-divider"></div>
           <div class="menu__link-container">
             <img src="Assets/Help.svg" alt="" class="menu__link-icon" />
             <a class="menu__links" href="#">Help</a>
           </div>
         </nav>
-        <div class="reports-generated">
-          <h1>Reports generated</h1>
-          <p>This is the number of reports you have used this month.</p>
+        <div class="reports-generated__wrapper">
+          <div class="reports-generated">
+            <h1>Reports generated</h1>
+            <p>This is the number of reports you have used this month.</p>
+            <div class="progress-indicator">
+              <p>64%</p>
+              <div class="progress-bar">
+                <div class="progress-completed"></div>
+              </div>
+            </div>
+          </div>
         </div>
         <div id="bot-sidebar-marker" class="bot-sidebar-marker"></div>
       </aside>
@@ -73,7 +82,8 @@
           <header class="graph__header">
             <h1 class="graph__title">Reports Generated</h1>
             <div class="filter">
-              <img src="Assets/Filter Icon.svg" alt="" /> Filter
+              <img src="Assets/Filter Icon.svg" alt="" />
+              <a href=""> Filter </a>
             </div>
           </header>
           <header class="graph__statSummary">

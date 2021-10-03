@@ -31,7 +31,7 @@ body {
   padding: 0 1.5em;
   overflow: hidden;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .searchUser {
@@ -58,7 +58,7 @@ body {
   border: 0;
 }
 
-.selected-link {
+a.selected-link {
   color: white;
 }
 
@@ -100,7 +100,8 @@ body {
 .menu p,
 .top-menu a,
 .top-menu p,
-.referral__email-button {
+.referral__email-button,
+.filter a {
   font-weight: 400;
   text-decoration: underline;
   text-decoration-color: transparent;
@@ -111,6 +112,15 @@ body {
 .referral__email-button:hover {
   transition: all 200ms ease-in;
   text-decoration-color: white;
+}
+
+.filter a:hover {
+  transition: all 200ms ease-in;
+  text-decoration-color: black;
+}
+
+.menu__links {
+  color: #d0cbf0;
 }
 
 .graphReferral {
@@ -172,7 +182,7 @@ body {
 .graph__stat {
   border: none; /* Removes the default CSS styling for the <input> HTML tag in browsers */
   border-right: 1px solid #e0e6ed; /* Creates border to right of each .graph__stat class */
-  text-align: center; /* OPTIONAL - styling to center input text */
+  text-align: left; /* OPTIONAL - styling to center input text */
   margin: 0 5px; /* OPTIONAL - gives you spacing for visual appeal */
   flex: 1;
 }
@@ -253,15 +263,18 @@ body {
 
 .referral__form {
   padding: 37px 50px;
-  width: 60%;
+  flex: 1;
 }
 
 .referral__email-form {
   display: flex;
+  gap: 9px;
 }
 
 .referral__email-input {
   flex: 1;
+  font-size: 0.875em;
+  font-weight: 400;
   width: 100%;
 }
 

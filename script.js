@@ -51,14 +51,12 @@ if (
         topMenu.classList.add('top-menu--accordian');
       }, 50);
       console.log('out of view');
-      console.log(entries[0].boundingClientRect.y);
     } else {
       topMenu.classList.remove('top-menu--accordian');
       setTimeout(function () {
         topMenu.classList.remove('top-menu--visible');
       }, 200);
       console.log('in view again');
-      console.log(entries[0].boundingClientRect.y);
     }
   });
   observer.observe(menu.querySelector('#bot-sidebar-marker'));
