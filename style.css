@@ -283,19 +283,21 @@ body {
 .table-container {
   background: white;
   margin: 1.5em;
+  display: flex;
+  justify-content: center;
 }
 
 .table {
-  padding: 5px;
+  margin: 0 1.5em;
   border-collapse: collapse;
+  width: 100%;
 }
 
-table tr {
-  border-bottom: 1pt solid #e0e6ed;
+.table tr {
+  border-bottom: 1px solid #e0e6ed;
 }
 
 .table th {
-  border: 1px solid #c0c0c0;
   padding: 5px;
   background: #f0f0f0;
   position: sticky;
@@ -303,9 +305,39 @@ table tr {
     --top-nav-height
   ); /* Don't forget this, required for the stickiness */
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+  background: white;
+  text-align: justify;
 }
 
+.table th,
 .table td {
-  border: 1px solid #c0c0c0;
-  padding: 5px;
+  padding: 1em 0;
+}
+
+th:after,
+th:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+th:after {
+  bottom: 0;
+  border-bottom: 1px solid #e0e6ed;
+}
+
+.table a {
+  padding: 9px 34px;
+  border: 1px solid #e0e6ed;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.table a:link,
+.table a:hover,
+.table a:active {
+  color: red;
 }
