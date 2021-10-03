@@ -272,6 +272,7 @@ a.selected-link {
 .referral__email-form {
   display: flex;
   gap: 9px;
+  margin-top: 1em;
 }
 
 .referral__email-input {
@@ -283,6 +284,7 @@ a.selected-link {
 
 .referral__body {
   color: #4f4f4f;
+  margin-top: 0.5em;
 }
 
 .referral__email-input {
@@ -304,6 +306,7 @@ a.selected-link {
 }
 
 .referral__image {
+  display: none;
   width: 25%;
   height: 100%;
   background-size: cover;

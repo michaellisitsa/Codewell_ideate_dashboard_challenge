@@ -46,6 +46,10 @@
   padding: 96px 50px;
 }
 
+.referral__image {
+  display: block;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
